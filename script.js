@@ -7,16 +7,16 @@ function submitHandler(e){
 	let b = name.value.trim();
 	e.preventDefault();
 	if(a==='' || b===''){
-		alert("Please enter valid details.");
+		alert("Please enter valid details");
 		return ;
 	}
 	 new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 						if(Number(a)>18){
-				resolve(`Welcome ${b}, You can vote.`)
+				resolve(`Welcome ${b}. You can vote.`)
 			}
 			else{
-				reject(`Oh sorry ${b}, You aren't old enough.`)
+				reject(`Oh sorry ${b}. You aren't old enough.`)
 			}
 		},4000);
 		
