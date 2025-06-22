@@ -13,7 +13,7 @@ function submitHandler(e){
 	 new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 						if(Number(a)>18){
-				resolve(`Welcome ${b}. You can vote.`)
+				resolve(`Welcome, ${b}. You can vote.`)
 			}
 			else{
 				reject(`Oh sorry ${b}. You aren't old enough.`)
